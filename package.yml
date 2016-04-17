@@ -1,0 +1,20 @@
+name        : compositeproto
+version     : 0.4.2
+release     : 4
+source      :
+    - http://xorg.freedesktop.org/releases/individual/proto/compositeproto-0.4.2.tar.gz : 22195b7e50036440b1c6b3b2d63eb03dfa6e71c8a1263ed1f07b0f31ae7dad50
+license     :
+    - MIT
+summary     : Composite Extension
+component   : xorg.proto
+patterns    : /
+description : |
+    This package contains header files and documentation for the composite
+    extension.  Library and server implementations are separate.
+    
+setup      : |
+    %configure
+build      : |
+    %make
+install    : |
+    %make_install
